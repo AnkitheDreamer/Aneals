@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ANEAL'S - Taste of Island</title>
+  <link rel="stylesheet" href="input.css.css">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+  <!-- Header and Hero Section -->
+  <section id="restaurant" class="relative bg-cover bg-center h-screen" style="background-image: url('assets/WhatsApp\ Image\ 2024-12-09\ at\ 22.07.05_b4d8a4e3.jpg');">
+    <!-- Overlay -->
+    <div class="absolute inset-0 bg-black bg-opacity-10"></div>
+
+    <!-- Navbar -->
+    <header class="relative z-10">
+      <div class="flex items-center justify-between px-10 py-4">
+        <!-- Logo -->
+        <div class="flex items-center">
+          <img src="assets/logo.jpg" alt="Logo" class="h-10 w-10 rounded-3xl">
+          <span class="text-white text-2xl font-bold ml-2">ANEAL'S</span>
+        </div>
+
+        <!-- Burger Menu Button -->
+        <button id="burger-button" class="lg:hidden p-2 rounded text-white focus:outline-none">
+          <span class="block w-6 h-0.5 bg-white mb-1"></span>
+          <span class="block w-6 h-0.5 bg-white mb-1"></span>
+          <span class="block w-6 h-0.5 bg-white"></span>
+        </button>
+
+        <!-- Navigation -->
+        <nav id="burger-menu" class="hidden lg:flex space-x-6 bg-black bg-opacity-60 px-8 py-2 rounded-md">
+          <ul class="flex flex-col lg:flex-row lg:space-x-6">
+            <li><a href="#restaurant" class="nav-link text-white text-lg font-medium hover:text-orange-400">Restaurant</a></li>
+            <li><a href="#menu" class="nav-link text-white text-lg font-medium hover:text-orange-400">Menu</a></li>
+            <li><a href="#about" class="nav-link text-white text-lg font-medium hover:text-orange-400">About</a></li>
+            <li><a href="#contact" class="nav-link text-white text-lg font-medium hover:text-orange-400">Contact Us</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <!-- Hero Content -->
+    <div class="relative z-10 flex flex-col items-start justify-center h-full px-10 text-white mt-5">
+      <span class="text-orange-500 text-5xl font-bold">ANEAL'S</span>
+      <h1 class="text-5xl font-bold uppercase">Taste of the Island</h1>
+      <p class="mt-4 text-lg max-w-md">
+        Serving <span class="text-orange-500">AUTHENTIC</span> Caribbean Cuisine since 1999. Come taste the difference—Jerk Chicken, Curry Goat, Doubles, and many more. The <span class="text-orange-500">DOOR AWAITS</span> you.
+      </p>
+      <div class="flex space-x-4">
+        <button class="mt-6 px-6 py-2 bg-orange-500 text-black font-bold uppercase rounded-lg hover:bg-orange-600">More Info</button>
+        <button onclick="window.location.href='order.html'" class="mt-6 px-6 py-2 bg-orange-500 text-black font-bold uppercase rounded-lg hover:bg-orange-600">Order Online</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Menu Section -->
+  <section class="relative">
+    <img src="assets/menu.jpeg" alt="Foods" class="w-full h-[300px] object-cover py-5 bg-orange-400 ">
+    <div class="absolute inset-0 flex flex-col justify-center items-center  text-white bg-black/10">
+      <h1 class="text-6xl font-bold  font-serif ">Foods:</h1>
+      <h2 class="text-5xl   font-sans">Aneal's Got Better</h2>
+    </div>
+  </section>
+  <!-- Menu Section -->
+<section class="bg-orange-400 py-12">
+  <div class="container mx-auto px-6">
+    <h1 class="text-white text-center text-5xl font-bold mb-8">MENU</h1>
+    
+
+
+
+
+    <!-- Menu Section with Image Gallery -->
+<div class="flex flex-col lg:flex-row items-center space-y-6 lg:space-y-0 lg:space-x-12 animate-fade-in-up">
+  <!-- Image Gallery Section -->
+  <div class="w-full lg:w-1/2 relative">
+    <!-- Images -->
+    <div class="relative overflow-hidden rounded-lg shadow-lg">
+      <img id="gallery-image" src="assets/Rice Entrees/curry-chicken.jpg" alt="Menu Item" class="w-full transition-transform duration-300">
+    </div>
+
+    <!-- Navigation Buttons -->
+    <button id="prev-btn" class="absolute top-1/2 left-4 -translate-y-1/2 bg-black bg-opacity-50 text-white px-4 py-2 rounded-full hover:bg-opacity-75 focus:outline-none">
+      &lt;
+    </button>
+    <button id="next-btn" class="absolute top-1/2 right-4 -translate-y-1/2 bg-black bg-opacity-50 text-white px-4 py-2 rounded-full hover:bg-opacity-75 focus:outline-none">
+      &gt;
+    </button>
+  </div>
+
+  <!-- Text Section -->
+  <div class="w-full lg:w-1/2">
+    <h2 class="text-3xl font-bold italic underline text-white mb-4">RICE ENTREES</h2>
+    <table class="w-full text-left text-white">
+      <thead>
+        <tr>
+          <th class="font-semibold text-lg py-2">Item</th>
+          <th class="font-semibold text-lg py-2">Sm</th>
+          <th class="font-semibold text-lg py-2">Lg</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="py-1">Curried Chicken Boneless</td>
+          <td class="py-1">$13</td>
+          <td class="py-1">$16</td>
+        </tr>
+        <tr>
+          <td class="py-1">Stew Chicken Boneless</td>
+          <td class="py-1">$13</td>
+          <td class="py-1">$16</td>
+        </tr>
+        <tr>
+          <td class="py-1">Jerk Chicken Leg & Thigh</td>
+          <td class="py-1">$14</td>
+          <td class="py-1">$17</td>
+        </tr>
+        <tr>
+          <td class="py-1">Curried Goat</td>
+          <td class="py-1">$15</td>
+          <td class="py-1">$18</td>
+        </tr>
+        <tr>
+          <td class="py-1">Stew Oxtail</td>
+          <td class="py-1">$15</td>
+          <td class="py-1">$18</td>
+        </tr>
+        <tr>
+          <td class="py-1">Curried Shrimp</td>
+          <td class="py-1">$14</td>
+          <td class="py-1">$17</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+<!-- JavaScript for Gallery Navigation -->
+
+ 
+
+
+<!-- Menu Section 2 -->
+<div class="flex flex-col lg:flex-row items-center space-y-6 lg:space-y-0 lg:space-x-12 animate-fade-in-up mt-12">
+  <!-- Text Section -->
+  <div class="w-full lg:w-1/2">
+    <h2 class="text-3xl font-bold italic underline text-white mb-4">ROTI</h2>
+    <table class="w-full text-left text-white">
+      <tbody>
+        <tr>
+          <td class="py-1">Curried Chicken Boneless</td>
+          <td class="py-1">$14</td>
+        </tr>
+        <tr>
+          <td class="py-1">Stew Chicken Boneless</td>
+          <td class="py-1">$14</td>
+        </tr>
+        <tr>
+          <td class="py-1">Jerk Chicken Boneless</td>
+          <td class="py-1">$15</td>
+        </tr>
+        <tr>
+          <td class="py-1">Curried Goat</td>
+          <td class="py-1">$16</td>
+        </tr>
+        <tr>
+          <td class="py-1">Curried Shrimp</td>
+          <td class="py-1">$15</td>
+        </tr>
+        <tr>
+          <td class="py-1">Curried Potato</td>
+          <td class="py-1">$8</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+
+  <!-- Image Gallery Section -->
+  <div class="w-full lg:w-1/2 relative">
+    <!-- Images -->
+    <div class="relative overflow-hidden rounded-lg shadow-lg">
+      <img id="roti-gallery-image" src="assets/Roti/curry-chicken-roti.jpg" alt="Roti Item" class="w-full transition-transform duration-300">
+    </div>
+
+    <!-- Navigation Buttons -->
+    <button id="roti-prev-btn" class="absolute top-1/2 left-4 -translate-y-1/2 bg-black bg-opacity-50 text-white px-4 py-2 rounded-full hover:bg-opacity-75 focus:outline-none">
+      &lt;
+    </button>
+    <button id="roti-next-btn" class="absolute top-1/2 right-4 -translate-y-1/2 bg-black bg-opacity-50 text-white px-4 py-2 rounded-full hover:bg-opacity-75 focus:outline-none">
+      &gt;
+    </button>
+  </div>
+</div>
+
+<!-- Menu Section 3 -->
+<div class="flex flex-col lg:flex-row items-center space-y-6 lg:space-y-0 lg:space-x-12 animate-fade-in-up mt-12">
+  <!-- Image Gallery Section -->
+  <div class="w-full lg:w-1/2 relative">
+    <!-- Images -->
+    <div class="relative overflow-hidden rounded-lg shadow-lg">
+      <img id="sides-gallery-image" src="assets/Sides/the-mouth-watering-doubles.jpg" alt="Sides Item" class="w-full transition-transform duration-300">
+    </div>
+
+    <!-- Navigation Buttons -->
+    <button id="sides-prev-btn" class="absolute top-1/2 left-4 -translate-y-1/2 bg-black bg-opacity-50 text-white px-4 py-2 rounded-full hover:bg-opacity-75 focus:outline-none">
+      &lt;
+    </button>
+    <button id="sides-next-btn" class="absolute top-1/2 right-4 -translate-y-1/2 bg-black bg-opacity-50 text-white px-4 py-2 rounded-full hover:bg-opacity-75 focus:outline-none">
+      &gt;
+    </button>
+  </div>
+
+  <!-- Text Section -->
+  <div class="w-full lg:w-1/2">
+    <h2 class="text-3xl font-bold italic underline text-white mb-4">SIDES</h2>
+    <p class="italic text-sm mb-4 text-white">subject to availability</p>
+    <table class="w-full text-left text-white">
+      <tbody>
+        <tr>
+          <td class="py-1">Dhal Puri</td>
+          <td class="py-1">$4</td>
+        </tr>
+        <tr>
+          <td class="py-1">Paratha</td>
+          <td class="py-1">$5</td>
+        </tr>
+        <tr>
+          <td class="py-1">Doubles</td>
+          <td class="py-1">$3.75</td>
+        </tr>
+        <tr>
+          <td class="py-1">Chick Peas or Spinach</td>
+          <td class="py-1">$2.50</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+
+
+    <!-- Footer Note -->
+    <p class="text-white text-center mt-8 italic">Prices subject to change without notice</p>
+  </div>
+</section>
+
+  <!-- About Section -->
+  <section class="relative bg-cover bg-center bg-fixed" style="background-image: url('assets/sticky\ bg.png');">
+    <div class="container mx-auto px-6 py-12 text-white">
+      <!-- Title -->
+      <div class="rounded-full">
+        <div>
+          <h1 class="text-center text-6xl font-bold mb-16 ">
+            <span class="bg-orange-200 rounded-full px-4 py-2 inline-block">Story of Aneal's</span>
+          </h1>
+        </div>
+      </div>
+      
+      
+  
+      <!-- Story Section -->
+<div class="relative bg-black bg-opacity-50 p-10 rounded-lg mb-24 animate-fade-in">
+  <blockquote class="text-xl sm:text-3xl italic border-l-4 border-orange-500 pl-6 mb-8">
+    "At Aneal’s, we don’t just serve food – we serve an experience, a connection to the island, and a taste that stays with you forever."
+  </blockquote>
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <!-- Owner -->
+    <div class="text-center">
+      <img src="assets/Owner.png" alt="Owner" class="w-80 h-80 mx-auto mb-4 shadow-lg rounded-2xl">
+      <h3 class="text-lg sm:text-2xl font-bold">Owner</h3>
+      <p class="mt-4 text-base sm:text-xl md:text-2xl leading-relaxed">
+        "Aneal started this journey to bring authentic Caribbean flavors to the heart of our community. With a passion for food and tradition, Aneal’s has become a staple for those seeking authentic dishes and warm hospitality."
+      </p>
+    </div>
+
+    <!-- Text Section -->
+    <div class="text-xl sm:text-2xl md:text-5xl leading-relaxed">
+      Aneal’s journey began 20 years ago with a simple vision: to connect people through food. Our restaurant embodies the vibrant culture of the Caribbean, offering dishes that remind you of home or take you on a new culinary adventure.
+    </div>
+  </div>
+</div>
+
+<!-- Sticky Background and Flowing Content -->
+<div class="relative bg-black bg-opacity-50 p-10 rounded-lg mb-24 animate-fade-in">
+  <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+    <!-- Text Section -->
+    <div class="text-lg sm:text-2xl md:text-5xl leading-relaxed text-black">
+      With expertise in culinary arts, the co-owner ensures every dish served at Aneal’s reflects the true taste of the Caribbean. Together, we strive to provide an unforgettable dining experience.
+    </div>
+    <!-- Co-Owner -->
+    <div class="text-center">
+      <img src="assets/Owner.png" alt="Co-Owner" class="w-80 h-80 rounded-2xl mx-auto mb-4 shadow-lg">
+      <h3 class="text-lg sm:text-2xl font-bold">Co-Owner</h3>
+      <p class="mt-4 text-base sm:text-xl md:text-2xl leading-relaxed">
+        "As you dine with us, you’ll experience the warmth of the islands through our signature dishes like jerk chicken, curry goat, and doubles. Every plate tells a story of tradition, flavor, and passion."
+      </p>
+    </div>
+  </div>
+</div>
+
+      <!-- More About Aneal's -->
+      <div class="animate-fade-in">
+        <h2 class="text-4xl font-semibold text-center underline mb-8">More About Aneal's</h2>
+        <div class="text-center mb-8">
+          <img src="assets/2021-best-restaurant.jpg" alt="Co-Owner" class="w-64 h-64 rounded-lg mx-auto mb-4 shadow-lg">
+          <p class="text-xl italic mb-2">Certified Caribbean Cuisine Specialist</p>
+          <p class="text-lg">Restaurant of the Year 2021</p>
+        </div>
+        <div class="container mx-auto px-6 py-12">
+          <h2 class="text-4xl font-semibold text-center underline mb-8 text-white">More About Aneal's</h2>
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-6 items-center">
+            <!-- YouTube Video 1 -->
+            <div class="aspect-w-16 aspect-h-9">
+              <iframe
+                class="w-full h-full rounded-lg shadow-lg"
+                src="https://www.youtube.com/embed/vzPzJatEsOo?si=ZQwnMGX6Q72bJOs8"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+        
+            <!-- YouTube Video 2 -->
+            <div class="aspect-w-16 aspect-h-9">
+              <iframe
+                class="w-full h-full rounded-lg shadow-lg"
+                src="https://www.youtube.com/embed/en89LURPr80?si=R4NsOUQDbAhlEdmA"
+                title="YouTube video player"
+                frameborder="0"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen
+              ></iframe>
+            </div>
+          </div>
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  
+  
+  <!-- https://youtu.be/vzPzJatEsOo?si=xkGntZq3gLXgYAg4 -->
+   <!-- https://youtu.be/en89LURPr80?si=dSJUPAWtU1GPf66J -->
+
+
+  <!-- Reviews Section -->
+<section id="review" class="bg-gray-800 text-white py-20 ">
+  <div class="container mx-auto text-center">
+    <!-- Section Title -->
+    <h2 class="text-4xl font-bold italic underline text-white mb-8">Loved by Many</h2>
+    <p class="text-lg mb-6">Rated over 4.5 on Google, DoorDash, TripAdvisor, and Uber Eats.</p>
+
+    <!-- Review Logos -->
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
+      <!-- Google Reviews -->
+      <div class="flex flex-col items-center">
+        <img src="assets/google review.png" alt="Google Reviews" class="rounded-lg shadow-lg w-80 hover:scale-105 transition-transform duration-300">
+        <a href="https://www.google.com/maps/place/Aneal%E2%80%99s+Taste+Of+The+Islands/@43.7709486,-79.5415323,17z/data=!3m1!4b1!4m6!3m5!1s0x882b2f737e352801:0x86c8354130019ab9!8m2!3d43.7709486!4d-79.5415323!16s%2Fg%2F11sf2cfhqt?entry=ttu&g_ep=EgoyMDI0MTIxMS4wIKXMDSoASAFQAw%3D%3D" target="_blank" class="mt-4 bg-orange-400 hover:bg-orange-500 text-white py-2 px-4 rounded transition">
+          View Reviews
+        </a>
+      </div>
+      <!-- DoorDash Reviews -->
+      <div class="flex flex-col items-center">
+        <img src="assets/doordash.png" alt="DoorDash Reviews" class="rounded-lg shadow-lg w-80 hover:scale-105 transition-transform duration-300">
+        <a href="https://www.doordash.com/en-CA/store/aneal's-taste-of-the-islands-toronto-24681818/?srsltid=AfmBOoqHpR-oKBGcdLaJW60rMoStYrnqspZkD8GhIQUlE22TEW13g6kW" target="_blank" class="mt-4 bg-orange-400 hover:bg-orange-500 text-white py-2 px-4 rounded transition">
+          View Reviews
+        </a>
+      </div>
+      <!-- TripAdvisor Reviews -->
+      <div class="flex flex-col items-center">
+        <img src="assets/tripadvisor review.png" alt="TripAdvisor Reviews" class="rounded-lg shadow-lg w-80 hover:scale-105 transition-transform duration-300">
+        <a href="https://www.tripadvisor.ca/Restaurant_Review-g181740-d10192047-Reviews-Aneal_s_Taste_of_the_Islands-Richmond_Hill_Ontario.html" target="_blank" class="mt-4 bg-orange-400 hover:bg-orange-500 text-white py-2 px-4 rounded transition">
+          View Reviews
+        </a>
+      </div>
+      <!-- Uber Eats Reviews -->
+      <div class="flex flex-col items-center">
+        <img src="assets/uber ets.png" alt="Uber Eats Reviews" class="rounded-lg shadow-lg w-80 hover:scale-105 transition-transform duration-300">
+        <a href="https://www.ubereats.com/ca/store/aneals-taste-of-the-islands/0MjdhIBDR5m0I-woxsMjpg?srsltid=AfmBOoq5hTE5m6SpPe8c0Sf3czvSAByN-r3E5OPniqU_FjMA4FTLjJ9x" target="_blank" class="mt-4 bg-orange-400 hover:bg-orange-500 text-white py-2 px-4 rounded transition">
+          View Reviews
+        </a>
+      </div>
+    </div>
+
+    <!-- Individual Customer Reviews -->
+    <h3 class="text-2xl font-semibold underline mb-6">What Our Customers Are Saying</h3>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+      <!-- Review 1 -->
+      <div class="bg-gray-700 rounded-lg shadow-lg p-6">
+        <p class="italic">"The food was absolutely delicious! The flavors transported me straight to the islands. Will definitely return!"</p>
+        <p class="mt-4 font-bold">- John Doe</p>
+      </div>
+      <!-- Review 2 -->
+      <div class="bg-gray-700 rounded-lg shadow-lg p-6">
+        <p class="italic">"Exceptional service and a cozy atmosphere. Highly recommend the jerk chicken!"</p>
+        <p class="mt-4 font-bold">- Jane Smith</p>
+      </div>
+      <!-- Review 3 -->
+      <div class="bg-gray-700 rounded-lg shadow-lg p-6">
+        <p class="italic">"Best Caribbean food I've had in years. The portions are generous, and the taste is amazing."</p>
+        <p class="mt-4 font-bold">- Michael Brown</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+  <!-- Contact Section -->
+  <section id="contact" class="bg-gray-800 text-white py-20">
+    <div class="container mx-auto">
+      <h2 class="text-4xl font-bold italic underline text-white mb-4">Contact Us</h2>
+      <p class="text-lg">
+        Visit Aneal’s Taste Of The Islands at 4801 Steeles Ave W Unit 6, Toronto, ON M9L 2W1. 
+        You can contact us at 416-111-1111.
+      </p>
+      <div class="w-full h-96">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2881.091836544252!2d-79.54410722433627!3d43.770952444807776!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x882b2f737e352801%3A0x86c8354130019ab9!2sAneal%E2%80%99s%20Taste%20Of%20The%20Islands!5e0!3m2!1sen!2sca!4v1735958685844!5m2!1sen!2sca" 
+          width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </div>
+</section>
+
+<section>
+
+  <footer style="background-color: #333; color: #fff; padding: 40px 20px; font-family: Arial, sans-serif;">
+    <div style="max-width: 1200px; margin: 0 auto; display: flex; flex-wrap: wrap; justify-content: space-between;">
+      <!-- About Section -->
+      <div style="flex: 1 1 250px; margin: 10px;">
+        <h3 style="color: #ffa500;">About Us</h3>
+        <p>Welcome to Aneas Restaurant! We serve delicious dishes crafted with fresh, locally-sourced ingredients. Visit us to experience amazing food and a warm atmosphere.</p>
+      </div>
+  
+      <!-- Contact Section -->
+      <div style="flex: 1 1 250px; margin: 10px;">
+        <h3 style="color: #ffa500;">Contact</h3>
+        <ul style="list-style: none; padding: 0;">
+          <li>📍 123 Foodie Lane, Toronto, ON</li>
+          <li>📞 (123) 456-7890</li>
+          <li>✉️ info@aneasrestaurant.com</li>
+        </ul>
+      </div>
+  
+      <!-- Social Media Links -->
+      <div style="flex: 1 1 250px; margin: 10px;">
+        <h3 style="color: #ffa500;">Follow Us</h3>
+        <ul style="list-style: none; padding: 0; display: flex; gap: 15px;">
+          <li><a href="#" style="color: #fff; text-decoration: none;">Facebook</a></li>
+          <li><a href="#" style="color: #fff; text-decoration: none;">Instagram</a></li>
+          <li><a href="#" style="color: #fff; text-decoration: none;">Twitter</a></li>
+        </ul>
+      </div>
+  
+      <!-- Newsletter Subscription -->
+      <div style="flex: 1 1 250px; margin: 10px;">
+        <h3 style="color: #ffa500;">Subscribe to Our Newsletter</h3>
+        <form>
+          <input type="email" placeholder="Enter your email" style="padding: 10px; width: calc(100% - 20px); border: none; border-radius: 5px;">
+          <button type="submit" style="margin-top: 10px; padding: 10px; width: 100%; background-color: #ffa500; color: #fff; border: none; border-radius: 5px; cursor: pointer;">Subscribe</button>
+        </form>
+      </div>
+    </div>
+  
+    <!-- Bottom Section -->
+    <div style="text-align: center; margin-top: 20px; border-top: 1px solid #555; padding-top: 20px;">
+      <p>&copy; 2025 Aneas Restaurant. All Rights Reserved.</p>
+    </div>
+  </footer>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  <!-- JavaScript -->
+  <script>
+    const burgerButton = document.getElementById('burger-button');
+    const burgerMenu = document.getElementById('burger-menu');
+
+    burgerButton.addEventListener('click', () => {
+      burgerMenu.classList.toggle('hidden');
+    });
+
+ // Image gallery setup
+ const images = [
+   "assets/Rice Entrees/curry-chicken.jpg",
+    "assets/Rice Entrees/Stew chicken.jpg",
+    "assets/Rice Entrees/caribbean-jerk-chicken.jpg",
+    "assets/Rice Entrees/curry-goat-with-rice.jpg",
+    
+    "assets/Rice Entrees/oxtail.jpg",
+    "assets/Rice Entrees/curry-shrimp-made-to.jpg",
+  ];
+  let currentIndex = 0;
+
+  const galleryImage = document.getElementById("gallery-image");
+  const prevBtn = document.getElementById("prev-btn");
+  const nextBtn = document.getElementById("next-btn");
+
+  // Function to update the gallery image
+  function updateImage(index) {
+    galleryImage.src = images[index];
+  }
+
+  // Previous button click event
+  prevBtn.addEventListener("click", () => {
+    currentIndex = (currentIndex - 1 + images.length) % images.length;
+    updateImage(currentIndex);
+  });
+
+  // Next button click event
+  nextBtn.addEventListener("click", () => {
+    currentIndex = (currentIndex + 1) % images.length;
+    updateImage(currentIndex);
+  });
+  // Roti Gallery Setup
+const rotiImages = [
+
+    "assets/Rice Entrees/Stew chicken.jpg",
+    "assets/Rice Entrees/caribbean-jerk-chicken.jpg",
+    "assets/Rice Entrees/curry-goat-with-rice.jpg",
+    
+    "assets/Rice Entrees/oxtail.jpg",
+    "assets/Rice Entrees/curry-shrimp-made-to.jpg",
+];
+let rotiIndex = 0;
+
+const rotiGalleryImage = document.getElementById("roti-gallery-image");
+const rotiPrevBtn = document.getElementById("roti-prev-btn");
+const rotiNextBtn = document.getElementById("roti-next-btn");
+
+function updateRotiImage(index) {
+  rotiGalleryImage.src = rotiImages[index];
+}
+
+rotiPrevBtn.addEventListener("click", () => {
+  rotiIndex = (rotiIndex - 1 + rotiImages.length) % rotiImages.length;
+  updateRotiImage(rotiIndex);
+});
+
+rotiNextBtn.addEventListener("click", () => {
+  rotiIndex = (rotiIndex + 1) % rotiImages.length;
+  updateRotiImage(rotiIndex);
+});
+
+// Sides Gallery Setup
+const sidesImages = [
+
+    "assets/Rice Entrees/Stew chicken.jpg",
+    "assets/Rice Entrees/caribbean-jerk-chicken.jpg",
+    "assets/Rice Entrees/curry-goat-with-rice.jpg",
+    
+    "assets/Rice Entrees/oxtail.jpg",
+    "assets/Rice Entrees/curry-shrimp-made-to.jpg",
+];
+let sidesIndex = 0;
+
+const sidesGalleryImage = document.getElementById("sides-gallery-image");
+const sidesPrevBtn = document.getElementById("sides-prev-btn");
+const sidesNextBtn = document.getElementById("sides-next-btn");
+
+function updateSidesImage(index) {
+  sidesGalleryImage.src = sidesImages[index];
+}
+
+sidesPrevBtn.addEventListener("click", () => {
+  sidesIndex = (sidesIndex - 1 + sidesImages.length) % sidesImages.length;
+  updateSidesImage(sidesIndex);
+});
+
+sidesNextBtn.addEventListener("click", () => {
+  sidesIndex = (sidesIndex + 1) % sidesImages.length;
+  updateSidesImage(sidesIndex);
+});
+
+
+
+
+
+
+
+  
+</body>
+</html>
